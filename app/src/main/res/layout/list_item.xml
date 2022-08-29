@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFF"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:id="@+id/book_thumbnail"
+        android:layout_width="128dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/steve"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/book_main_info"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:layout_toRightOf="@id/book_thumbnail"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Steve Jobs"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textColor="#424242"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/book_title"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/book_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/book_title"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="3"
+            android:textSize="12sp"
+            tools:text="La biografía definitiva de Steve Jobs, el fundador de Apple, escrita con su colaboración. La muerte de Steve Jobs ha conmocionado al mundo. Tras entrevistarlo en más de cuarenta ocasiones en los últimos dos años, además de a un centenar de personas de su entorno, familiares, amigos, adversarios y colegas, Walter Isaacson nos presenta la única biografía escrita con la colaboración de Jobs, el retrato definitivo de uno de los iconos indiscutibles de nuestro tiempo, la crónica de la agitada vida y abrasiva personalidad del genio cuya creatividad, energía y afán de perfeccionismo revolucionaron seis industrias: la informática, el cine de animación, la música, la telefonía, las tabletas y la edición digital. Consciente de que la mejor manera de crear valor en el siglo XXI es conectar la creatividad con la tecnología, Jobs fundó una empresa en la que impresionantes saltos de la imaginación van de la mano de asombrosos logros tecnológicos. Aunque Jobs colaboró en el libro, no pidió ningún control sobre el contenido, ni siquiera ejerció el derecho a leerlo antes de su publicación. No rehuyó ningún tema y animó a la gente que conocía a hablar con franqueza. «He hecho muchas cosas de las que no me siento orgulloso, como dejar a mi novia embarazada a los veintitrés años y cómo me comporté entonces, pero no hay ningún cadáver en mi armario que no pueda salir a la luz». Jobs habla con una sinceridad a veces brutal sobre la gente con la que ha trabajado y contra la que ha competido. De igual modo, sus amigos, rivales y colegas ofrecen una visión sin edulcorar de las pasiones, los demonios, el perfeccionismo, los deseos, el talento, los trucos y la obsesión por controlarlo todo que modelaron su visión empresarial y los innovadores productos que logró crear. Su historia, por tanto, está llena de enseñanzas sobre innovación, carácter, liderazgo y valores. La vida de un genio capaz de enfurecer y seducir a partes iguales. Reseña: «El fallecimiento de Steve Jobs ha precipitado un alud de libros sobre su figura. De todos ellos, la aproximación más completa e interesante al personaje es la de Isaacson.» La Vanguardia" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_main_info"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/book_thumbnail"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/book_authors"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textSize="12sp"
+            tools:text="Authors: Walter Isaacson" />
+
+        <TextView
+            android:id="@+id/book_page_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"
+            tools:text="Pages: 200" />
+
+        <TextView
+            android:id="@+id/book_published_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp"
+            tools:text="Published: 2011-10-28" />
+    </LinearLayout>
+
+</RelativeLayout>

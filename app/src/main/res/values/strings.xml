@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Book Listing</string>
+
+    <!-- Placeholder text (hint) -->
+    <string name="placeholder_text">Search book</string>
+    <!-- Search button text -->
+    <string name="search_button_text">Search</string>
+    <!-- Settings Menu Item -->
+    <string name="settings_menu_item">Settings</string>
+    <!-- Settings Activity Title -->
+    <string name="settings_title">Book Settings</string>
+    <!-- Numbers of books shown by the app -->
+    <string name="settings_books_shown_label">Number of books shown</string>
+    <string name="settings_books_shown_key">books_shown</string>
+    <string name="settings_books_shown_default">10</string>
+    <!-- Authors -->
+    <string name="authors">Authors\n%1$s</string>
+    <!-- Pages -->
+    <string name="pages">Pages\n%1$s</string>
+    <!-- Published date -->
+    <string name="published_date"><font color='#ff00ff'>Published</font>\n%1$s</string>
+    <!-- No internet connection text -->
+    <string name="no_internet_connection">No internet connection :(</string>
+    <!-- Book wasn't found :( -->
+    <string name="book_wasnt_found">Book wasn\'t found :(</string>
+    <!-- Not available text for when a book description, authors, etc can't be shown -->
+    <string name="not_available">Not available</string>
+</resources>
