@@ -50,13 +50,13 @@ public class QueryUtils {
         return books;
     }
 
-    private static URL createUrl(String string Url) {
+    private static URL createUrl(String  url) {
 
         URL url = null;
 
         // Try to create a URL object
         try {
-            url = new URL(string Url);
+            url = new URL(url);
         } catch (MalformedURLException e) {
             Log.e(LOG_TAG, "Problem creating URL", e);
         }
