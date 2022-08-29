@@ -31,28 +31,6 @@ public class ResultsActivity extends AppCompatActivity implements LoaderManager.
     private BookAdapter mAdapter;
     private String mFinalUrl;
     private TextView mEmptyStateTextView;
-//    private static final String BASE_URL = "https://www.googleapis.com/books/v1/volumes?";
-
-/*    private static class myAsyncTask extends AsyncTask<String, Void, List<Book>> {
-        @Override
-        protected List<Book> doInBackground(String...myString) {
-            if (myString[0] != null) {
-                List<Book> books = QueryUtils.fetchBookData(myString[0]);
-                return books;
-            }
-            return null;
-        }
-        @Override
-        protected void onPostExecute(List<Book> books) {
-            if (books != null) {
-                for (int i = 0; i < books.size(); i++) {
-                    Log.v("ResultsActivity.java", "First book title: " + books.get(i).mTitle);
-                }
-            } else {
-                Log.v("ResultsActivity.java", "This book doesn't exist in our stock");
-            }
-        }
-    }*/
 
     // Get a reference to the LoaderManager in order to interact with Loaders
     LoaderManager loaderManager = getLoaderManager();
